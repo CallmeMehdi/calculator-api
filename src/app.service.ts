@@ -45,8 +45,8 @@ export class AppService {
 
   calculate(expression){
 
-    expression = expression.trim().replace(' ', '+')
-
+    expression = expression.trim().replace(/ /g, '+')
+    console.log(expression)
     let tokens = expression.split('');
   
     // Stack for numbers: 'values'
