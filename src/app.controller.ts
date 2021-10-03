@@ -8,8 +8,8 @@ export class AppController {
   @Get()
   calculate( @Query('expression') expression: string) {
     if (!expression){
-      return "Welcome! Write your expression above like so: url?expression=3+3\n \
-    You can use different operators: + - * / and parenthese ( )\n \
+      return "Welcome! Write your expression above like so: url?expression=3+3\n <br> \
+    You can use different operators: + - * / and parenthese ( )\n <br> \
     Enjoy!";
     }else
     return this.appService.calculate(expression);
